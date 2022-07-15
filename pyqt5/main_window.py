@@ -69,6 +69,32 @@ class mywindow(QMainWindow):
 
         # 显示窗口
         self.show()
+    def creat_n_lable(self):
+        # 1 获取可用的空间大小
+        print(self.size())
+        print(self.button_1.size())
+        print(self.button_1.geometry())
+        """
+        PyQt5.QtCore.QSize(960, 756)
+        PyQt5.QtCore.QSize(186, 75)
+        PyQt5.QtCore.QRect(19, 75, 186, 75)"""
+        self.width_ = 960-19-186
+        print(self.width_,756)
+        # print()
+        # 2 决定一行有多少个标签
+        print(self.width_//100)
+        for i in range(7):
+            self.lable = QLabel(self)
+            self.lable.resize(100,50)
+            self.lable.setText(f"{i}")
+            self.lable.move(186+19+i*100+50,100)
+            self.lable.show()
+
+            self.lable = QLabel(self)
+            self.lable.resize(100, 50)
+            self.lable.setText(f"{i}")
+            self.lable.move(186 + 19 + i * 100 + 50, 200)
+            self.lable.show()
 
     def main_menu(self):
         self.button_1 = QPushButton(self)
@@ -91,6 +117,7 @@ class mywindow(QMainWindow):
         self.button_1.resize(int(self.size().width() * 0.1 + 15 * len(self.button_1.text())),
                              int(self.size().height() * 0.1))
         self.button_1.setStyleSheet("QPushButton{font-size: 20px};")
+        self.button_1.clicked.connect(lambda :self.creat_n_lable())
         self.button_1.show()
 
         self.button_2 = QPushButton(self)
