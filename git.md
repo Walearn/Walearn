@@ -1,7 +1,9 @@
 安装git 这些东西都不是问题啊 
 其实我还是推荐 你去使用我们ubuntu系统来学习计算机 这才是 
 
-[参考教程]()
+[参考教程_雪峰](https://www.liaoxuefeng.com/wiki/896043488029600)
+
+[参考教程_知乎_](https://zhuanlan.zhihu.com/p/30044692)
 
 
 
@@ -12,8 +14,9 @@
     git config --global --unset http.proxy
     git config --global --unset https.proxy
 ### 生成密匙
+
     ssh-keygen -t rsa -C 2547715095@qq.com
-    这里其实可以设置ssh的sheng'c
+    这里其实可以设置ssh的生成位置
 ### 关闭ssl认证
 
     git config --global http.sslverify false
@@ -21,7 +24,38 @@
 copy.py 不可以使用哦 
 import copy 会出问题 
 
+### 添加远程仓库
+
+```
+git remote add friend https://github.com/Walearn/Walearn.git
+```
+
+### 上传
+
+```
+git add .
+git commit -m "test"
+git push 
+```
+
+### 下载
+
+```
+git clone https or ssh 
+这里可以是
+git clone https://github.com/Walearn/Walearn.git
+```
+
+## 更新 
+
+```
+git pull
+```
+
+
+
 ## 指令表
+
 |指令表|用途|
 |--|--|
 |commit||
