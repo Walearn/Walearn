@@ -1,9 +1,6 @@
-# hi,i am K_M_911
->as you can see,i am a chinese  student
->
-i am very glad to conmunicate with everyone
-## Mostly ,forgive my poor English
-now i am learning English and computer science
-### hope i could provide some interesting idea for you!!!
-	
-  
+# 这个是我和我的发小一起使用的公共仓库 
+
+不出意外的话 应该没有什么有价值的东西
+
+哈哈哈哈 
+
