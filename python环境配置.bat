@@ -1,0 +1,1 @@
+pip install -r win_pip.txt
